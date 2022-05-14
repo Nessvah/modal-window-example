@@ -10,16 +10,66 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #333;
+  color: #0d0d0d;
   line-height: 1.5;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(242, 203, 5, 0.808),
+    rgba(242, 159, 5, 0.801)
+  );
 }
 
 .header {
   height: 30vh;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 4rem 0;
 
   &__heading {
-    font-size: 3.2rem;
+    font-size: 4.8rem;
   }
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+// BUTTONS
+.btn {
+  &__open-modal {
+    padding: 2rem 3.5rem;
+    margin: 5rem 2rem;
+    border-radius: 10rem;
+    font-size: 1.6rem;
+    border: none;
+    background-color: #f2f2f2;
+    color: #a64f03;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  &__close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    cursor: pointer;
+    color: #0d0d0d;
+    border: none;
+    background: none;
+  }
+}
+
+.hidden {
+  //display: none;
 }
